@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header {
@@ -9,25 +9,39 @@ header {
     border-bottom: 2px solid black;
 }
 
-.destaque {
-    font-style: italic;
-    font-weight: bolder;
+.blocos, .blocosX {
+    width: 100%;
+    margin: 10px;
 }
 
-form {
-    background-color: whitesmoke;
+.blocos {
+    background-color: lightblue;
+}
+
+.blocosX {
+    background-color: lightcyan;
+}
+
+input {
+    width: 100%;
+}
+
+
+#main {
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
 }
 
-form > .mb-3 {
-    width: 70%;
+.itemsEvent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
 }
 
-input, button {
-    height: 60px;
-}
-
-button {
-    margin-right: 5px;
+h5 {
+    word-break: break-word;
 }
