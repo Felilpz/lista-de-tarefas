@@ -1,7 +1,7 @@
 let global = document.getElementById('itemsEvent')
 
 // Adicionar
-  function addButton() {
+function addButton() {
     // Obtém o elemento principal
     var main = document.getElementById("main");
 
@@ -25,16 +25,16 @@ let global = document.getElementById('itemsEvent')
 
     // Adiciona os botões ao elemento
     buttons.innerHTML = '<button class="finish-todo" onclick="confirmButton()">' +
-  '<i class="bi bi-check-lg"></i>' +
-  '</button>' +
-  '&nbsp;' +
-  '<button class="finish-todo" onclick="editButton()">' +
-  '<i class="bi bi-pencil-fill"></i>' +
-  '</button>' +
-  '&nbsp;' +
-  '<button class="finish-todo" onclick="deleteButton()">' +
-  '<i class="bi bi-trash3-fill"></i>' +
-  '</button>';
+        '<i class="bi bi-check-lg"></i>' +
+        '</button>' +
+        '&nbsp;' +
+        '<button class="finish-todo" onclick="editButton()">' +
+        '<i class="bi bi-pencil-fill"></i>' +
+        '</button>' +
+        '&nbsp;' +
+        '<button class="finish-todo" onclick="deleteButton()">' +
+        '<i class="bi bi-trash3-fill"></i>' +
+        '</button>';
 
     // Adiciona o título e os botões à nova tarefa
     newTodo.appendChild(title);
@@ -42,7 +42,7 @@ let global = document.getElementById('itemsEvent')
 
     // Adiciona a nova tarefa à lista de tarefas
     main.appendChild(newTodo);
-  }
+}
 
 
 // Pesquisar
