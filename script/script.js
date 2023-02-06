@@ -52,7 +52,9 @@ function searchButton() {
 
 // Confirmar
 function confirmButton() {
-    window.alert('teste confirmar');
+    let changeColor = document.querySelector(".itemsEvent")
+    changeColor.style.backgroundColor = ''
+    
 }
 
 // Editar
