@@ -1,37 +1,52 @@
-* {
-    /* border: 1px solid red; */
+/* * {
+    border: 1px solid red;
+} */
+
+:root {
+    --cor1: #3b234a;
+    --cor2: #523961;
+    --cor3: #baafc4;
+    --cor4: #d4c7bf;
+}
+
+body {
+    background-color: var(--cor2) !important;
 }
 
 header {
     text-align: center;
     margin-top: 20px;
-    
-    border-bottom: 2px solid black;
+}
+
+header > h1 {
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+.titleChange {
+    font-style: oblique;
+    text-decoration: line-through;
+    color: var(--cor4);
+    border-bottom: 1px solid var(--cor2);
 }
 
 .blocos, .blocosX {
     width: 100%;
-    margin: 10px;
-}
+    margin: 20px;
+    background-color: var(--cor1);
 
-.blocos {
-    background-color: lightblue;
-}
-
-.blocosX {
-    background-color: lightcyan;
+    border-radius: 0 15px;
+    padding: 10px;
 }
 
 input {
     width: 100%;
 }
 
-
 #main {
     margin-top: 40px;
     padding: 10px;
     text-align: center;
-    height: 100vh;
 }
 
 .itemsEvent {
@@ -39,10 +54,81 @@ input {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 1rem;
-    border-bottom: 1px solid #ddd;
     transition: 0.3s;
+    border-bottom: 1px solid var(--cor1);
 }
 
-h5 {
+h6 {
     word-break: break-word;
+    color: var(--cor4) !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.butao {
+    background-color: #523961;
+    border: 0;
+    padding: 10px;
+
+    font-weight: bold;
+    color: var(--cor4);
+
+    margin-top: 7px;
+}
+
+.butao:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    transition: .3s;
+}
+
+label > h4 {
+    color: var(--cor4);
+    display: flex;
+    text-align: left;
+}
+
+input[type=text] {
+    height: 56px;
+    border: none;
+}
+
+input[type=text]:focus {
+    outline: none !important;
+    border-color: none;
+    box-shadow: none;
+}
+
+.finish-todo {
+    border: none;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    width: 46px;
+}
+
+.finish-todo:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--cor4) !important;
+}
+
+a:hover {
+    color: grey !important;
+}
+
+footer > p {
+    color: var(--cor3);
+    font-size: 1.1em;
+    margin-top: 50px;
+}
+
+.original-color {
+    background-color: var(--cor1);
 }

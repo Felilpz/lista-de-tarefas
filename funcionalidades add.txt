@@ -1,0 +1,4 @@
+adicionar data
+adicionar importancia
+adicionar historico de tarefas feitas
+botao feito e nao feito

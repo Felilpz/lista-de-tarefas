@@ -25,20 +25,18 @@
 <body>
   <div class="container">
     <header>
-      <h1>Lista de tarefas</h1>
-      <p>A famosa <span class="destaque">to-do list</span>, feita por <a href="https://www.github.com/Felilpz"
-          target="_blank">Felilpz</a></p>
+      <h1 class="mb-4">SUA <span class="titleChange">LISTA DE TAREFAS¡</span></h1>
     </header>
     <section>
       <div class="row justify-content-center mt-4">
         <div class="col-5 blocosX mr-3">
           <form>
             <div class="mb-2">
-              <label for="adicionar" class="form-label p-2">Adicione sua tarefa</label>
-              <input type="text" id="adicionar" class="form-control">
+              <label for="adicionar" class="form-label p-2"><h4>Adicionar tarefa</h4></label>
+              <input type="text" id="adicionar" class="form-control" placeholder="Modo carreira F22 com o athletic bilbao">
             </div>
             <div class="mb-4">
-              <input type="button" value="ADICIONAR" onclick="addButton()">
+              <input type="button" value="ADICIONAR" class="butao" onclick="addButton()">
             </div>
           </form>
         </div>
@@ -46,11 +44,11 @@
         <div class="col-5 blocosX">
           <form>
             <div class="mb-2">
-              <label for="procurar" class="form-label p-2">Procure por sua tarefa</label>
-              <input type="text" id="procurar" class="form-control">
+              <label for="procurar" class="form-label p-2"><h4>Procurar tarefa</h4></label>
+              <input type="text" id="procurar" class="form-control" placeholder="Procurar tarefa...">
             </div>
             <div class="mb-4">
-              <input type="button" value="PROCURAR" onclick="searchButton()">
+              <input type="button" value="PROCURAR" class="butao" onclick="searchButton()">
             </div>
           </form>
         </div>
@@ -58,11 +56,9 @@
 
 
       <div id="main">
-        <h1 class="mb-5">SUA LISTA DE TAREFAS</h1>
-
-        <div class="itemsEvent mb-2">
+        <div class="itemsEvent">
           <div class="title col-6">
-            <h5>TAREFA EXEMPLO</h5>
+            <h6>TAREFA EXEMPLO<h6>
           </div>
 
           <div class="buttonsInEvent col-6">
@@ -80,6 +76,14 @@
       </div>
     </section>
   </div>
+
+  <footer>
+    <p>
+      A famosa <span class="destaque">to-do list</span>, feita por 
+      <a href="https://www.github.com/Felilpz"
+      target="_blank">Felilpz</a>
+    </p>
+  </footer>
 </body>
 
 </html>
