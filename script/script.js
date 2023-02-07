@@ -24,15 +24,15 @@ function addButton() {
     buttons.className = "buttonsInEvent col-6";
 
     // Adiciona os botões ao elemento
-    buttons.innerHTML = '<button class="finish-todo" onclick="confirmButton()">' +
+    buttons.innerHTML = '<button class="finish-todo" onclick="confirmButton(event)">' +
         '<i class="bi bi-check-lg"></i>' +
         '</button>' +
         '&nbsp;' +
-        '<button class="finish-todo" onclick="editButton()">' +
+        '<button class="finish-todo" onclick="editButton(event)">' +
         '<i class="bi bi-pencil-fill"></i>' +
         '</button>' +
         '&nbsp;' +
-        '<button class="finish-todo" onclick="deleteButton()">' +
+        '<button class="finish-todo" onclick="deleteButton(event)">' +
         '<i class="bi bi-trash3-fill"></i>' +
         '</button>';
 
@@ -51,18 +51,27 @@ function searchButton() {
 }
 
 // Confirmar
-function confirmButton() {
-    let changeColor = document.querySelector(".itemsEvent")
-    changeColor.style.backgroundColor = ''
-    
-}
+function confirmButton(event) {
+    let changeColor = event.currentTarget.parentElement.parentElement;
+    if (changeColor.style.backgroundColor === 'grey') {
+      changeColor.style.backgroundColor = ''
+    } else {
+      changeColor.style.backgroundColor = 'grey'
+    }
+  }
+  
+  
 
 // Editar
-function editButton() {
-    window.alert('teste editar');
-}
+function editButton(event) {
+    let editTitle = event.target.closest('.itemsEvent').querySelector('.title');
+    let newTitle = prompt('Digite o novo título da tarefa: ');
+    editTitle.innerHTML = `<h5>${newTitle}</h5>`;
+  }
+  
 
 // Excluir
-function deleteButton() {
-    window.alert('teste excluir');
+function deleteButton(event) {
+    let delet = document.querySelector('.itemsEvent')
+    delet.remove();
 }
