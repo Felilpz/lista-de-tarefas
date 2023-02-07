@@ -53,19 +53,23 @@ function searchButton() {
 }
 
 // Confirmar
-// Confirmar
 function confirmButton(event) {
   let changeColor = event.currentTarget.parentElement.parentElement;
   if (changeColor.classList.contains('original-color')) {
     changeColor.classList.remove('original-color');
     changeColor.style.backgroundColor = '#523961';
+    changeColor.style.fontStyle = "normal";
+    changeColor.style.textDecoration = "none";
   } else {
     changeColor.classList.add('original-color');
     changeColor.style.backgroundColor = '';
+    changeColor.style.fontStyle = "italic";
+    changeColor.style.textDecoration = "line-through";
   }
 
   localStorage.setItem("tarefas", main.innerHTML);
 }
+
 
 
 // Editar
