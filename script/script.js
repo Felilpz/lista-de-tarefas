@@ -1,6 +1,3 @@
-let global = document.getElementById('itemsEvent')
-
-
 // Adicionar
 function addButton() {
   var main = document.getElementById("main");
@@ -23,7 +20,7 @@ function addButton() {
   var buttons = document.createElement("div");
   buttons.className = "buttonsInEvent col-6";
 
-  // Adiciona os botões ao elemento
+  // Adiciona os botões ao elementoi
   buttons.innerHTML = '<button class="finish-todo" onclick="confirmButton(event)">' +
     '<i class="bi bi-check-lg"></i>' +
     '</button>' +
@@ -44,6 +41,10 @@ function addButton() {
   main.appendChild(newTodo);
 
   localStorage.setItem("tarefas", main.innerHTML);
+  
+  // Resetar input text dps de enviar
+  document.getElementById('adicionar').value = "";
+  document.getElementById('adicionar').focus();
 }
 
 

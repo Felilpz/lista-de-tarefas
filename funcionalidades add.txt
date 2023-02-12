@@ -2,3 +2,6 @@ adicionar data
 adicionar importancia
 adicionar historico de tarefas feitas
 botao feito e nao feito
+ao clicar em editar, ja botar oq ta escrito na tarefa
+
+ao clicar nas letras da tarefa, conseguir editar.
