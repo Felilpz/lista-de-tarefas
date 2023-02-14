@@ -28,8 +28,8 @@
       <h1 class="mb-4">SUA <span class="titleChange">LISTA DE TAREFAS¡</span></h1>
     </header>
     <section>
-      <div class="row justify-content-center mt-4">
-        <div class="col-5 blocosX">
+      <div class="justify-content-center mt-4">
+        <div class="blocosX mt-5">
           <form>
             <div class="mb-2">
               <label for="adicionar" class="form-label p-2"><h4>Adicionar tarefa</h4></label>
@@ -40,28 +40,16 @@
             </div>
           </form>
         </div>
-
-        <div class="col-5 blocosX">
-          <form>
-            <div class="mb-2">
-              <label for="procurar" class="form-label p-2"><h4>Procurar tarefa</h4></label>
-              <input type="text" id="procurar" class="form-control" required placeholder="Procurar tarefa...">
-            </div>
-            <div class="mb-4">
-              <input type="button" value="PROCURAR" class="butao" onclick="searchButton()">
-            </div>
-          </form>
-        </div>
       </div>
 
 
       <div id="main">
         <div class="itemsEvent">
-          <div class="title col-6">
+          <div class="title">
             <h6>TAREFA EXEMPLO<h6>
           </div>
 
-          <div class="buttonsInEvent col-6">
+          <div class="buttonsInEvent">
             <button class="finish-todo" onclick="confirmButton(event)">
               <i class="bi bi-check-lg"></i>
             </button>

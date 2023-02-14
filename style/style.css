@@ -50,6 +50,7 @@ input {
 }
 
 .itemsEvent {
+    width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,6 +58,15 @@ input {
     transition: 0.3s;
     border-bottom: 1px solid var(--cor1);
     border-right: 1px solid var(--cor1);
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .itemsEvent {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 h6 {
@@ -135,8 +145,11 @@ footer>p {
 }
 
 .blocosX {
-    width: 368px;
-    margin-bottom: 20px;
+    width: 500px;
+    
+    display: block;
+    margin: 0 auto;
+
 }
 
 @media (max-width: 768px) {

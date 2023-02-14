@@ -1,23 +1,24 @@
+// Global
+let main = document.getElementById("main");
+
 // Adicionar
 function addButton() {
-  var main = document.getElementById("main");
-
   // Cria uma nova div com a classe "itemsEvent mb-4"
-  var newTodo = document.createElement("div");
+  let newTodo = document.createElement("div");
   newTodo.className = "itemsEvent mb-4";
 
   // Cria uma div para o título da tarefa
-  var title = document.createElement("div");
+  let title = document.createElement("div");
   title.className = "title col-6";
 
   // Adiciona o título da tarefa ao elemento
-  var task = document.createElement("h6")
+  let task = document.createElement("h6")
   let adicionar = String(document.getElementById('adicionar').value)
   task.innerHTML = `${adicionar}`
   title.appendChild(task);
 
   // Cria uma div para os botões
-  var buttons = document.createElement("div");
+  let buttons = document.createElement("div");
   buttons.className = "buttonsInEvent col-6";
 
   // Adiciona os botões ao elementoi
@@ -41,16 +42,10 @@ function addButton() {
   main.appendChild(newTodo);
 
   localStorage.setItem("tarefas", main.innerHTML);
-  
+
   // Resetar input text dps de enviar
   document.getElementById('adicionar').value = "";
   document.getElementById('adicionar').focus();
-}
-
-
-// Pesquisar
-function searchButton() {
-  window.alert('teste procurar');
 }
 
 // Confirmar
